@@ -41,6 +41,15 @@ namespace ACM.BL
                 _lastName = value;
             }
         }
+        public Customer()
+        {
+
+        }
+
+        public Customer(int customerId)
+        {
+            CustomerId = customerId;
+        }
 
         public Customer Retrieve(int customerId)
         {
