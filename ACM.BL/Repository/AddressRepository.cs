@@ -59,7 +59,27 @@ namespace ACM.BL.Repository
 
         public bool Save(Address address)
         {
-            return true;
+            var success = true;
+            if (address.HasChanges)
+            {
+                if (address.IsValid)
+                {
+                    if (address.IsNew)
+                    {
+                        // call an insert stored procedure
+                    }
+                    else
+                    {
+                        // call an update sotred procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+
+            return success;
         }
     }
 }

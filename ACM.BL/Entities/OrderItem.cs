@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACM.BL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class OrderItem
+    public class OrderItem : EntityBase
     {
         public int OrderItemId { get; private set; }
         public int ProductId { get; set; }
@@ -31,7 +32,7 @@ namespace ACM.BL
             return true;
         }
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
             if (Quantity < 0) isValid = false;

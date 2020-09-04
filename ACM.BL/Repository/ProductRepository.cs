@@ -18,13 +18,34 @@ namespace ACM.BL.Repository
                 product.ProductDescription = "Assorted size set of siunflower";
                 product.CurrentPrice = 15.96M;
             }
+            Console.WriteLine(product.ToString());
 
             return product;           
         }
 
         public bool Save(Product product)
         {
-            return true;
+            var success = true;
+            if (product.HasChanges)
+            {
+                if (product.IsValid)
+                {
+                    if(product.IsNew)
+                    {
+                        // call an insert stored procedure
+                    }
+                    else
+                    {
+                        // call an update sotred procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+
+            return success;
         }
     }
 }

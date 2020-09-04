@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACM.BL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Address
+    public class Address : EntityBase
     {
         public int AddressId { get; private set; }
         public int AddressType { get; set; }
@@ -27,7 +28,7 @@ namespace ACM.BL
             AddressId = addressId;
         }
 
-        public bool Validade()
+        public override bool Validate()
         {
             var isValid = true;
             if (PostalCode == null) isValid = false;

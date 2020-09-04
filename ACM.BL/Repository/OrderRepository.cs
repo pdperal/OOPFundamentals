@@ -22,7 +22,27 @@ namespace ACM.BL.Repository
 
         public bool Save(Order order)
         {
-            return true;
+            var success = true;
+            if (order.HasChanges)
+            {
+                if (order.IsValid)
+                {
+                    if (order.IsNew)
+                    {
+                        // call an insert stored procedure
+                    }
+                    else
+                    {
+                        // call an update sotred procedure
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+
+            return success;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ACM.BL.Repository;
+﻿using ACM.BL.Entities;
+using ACM.BL.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Customer
+    public class Customer : EntityBase
     {
         
         public int CustomerId { get; private set; }
@@ -45,6 +46,7 @@ namespace ACM.BL
                 _lastName = value;
             }
         }
+        public override string ToString() => FullName;
         public Customer() : this(0)
         {
 
@@ -56,7 +58,7 @@ namespace ACM.BL
             AddressList = new List<Address>();
         }
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
             if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
