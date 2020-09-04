@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACM.BL.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,12 @@ namespace ACM.BL
 {
     public class Customer
     {
+        
         public int CustomerId { get; private set; }
         public string EmailAddres { get; set; }
         public string FirstName { get; set; }
+        public List<Address> AddressList { get; set; }
+        public int CustomerType { get; set; }
         public string FullName
         {
             get
@@ -41,7 +45,7 @@ namespace ACM.BL
                 _lastName = value;
             }
         }
-        public Customer()
+        public Customer() : this(0)
         {
 
         }
@@ -49,6 +53,7 @@ namespace ACM.BL
         public Customer(int customerId)
         {
             CustomerId = customerId;
+            AddressList = new List<Address>();
         }
 
         public bool Validate()

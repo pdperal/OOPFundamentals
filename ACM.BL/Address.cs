@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    class Address
+    public class Address
     {
         public int AddressId { get; private set; }
         public int AddressType { get; set; }
