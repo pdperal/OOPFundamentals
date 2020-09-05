@@ -1,0 +1,6 @@
+C:\Users\Pedro\source\repos\ACM\Acme.Commom\bin\Debug\Acme.Commom.dll
+C:\Users\Pedro\source\repos\ACM\Acme.Commom\bin\Debug\Acme.Commom.pdb
+C:\Users\Pedro\source\repos\ACM\Acme.Commom\obj\Debug\Acme.Commom.csprojAssemblyReference.cache
+C:\Users\Pedro\source\repos\ACM\Acme.Commom\obj\Debug\Acme.Commom.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\source\repos\ACM\Acme.Commom\obj\Debug\Acme.Commom.dll
+C:\Users\Pedro\source\repos\ACM\Acme.Commom\obj\Debug\Acme.Commom.pdb
