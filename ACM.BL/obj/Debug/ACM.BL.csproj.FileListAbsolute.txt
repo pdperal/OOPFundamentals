@@ -4,3 +4,6 @@ C:\Users\Pedro\source\repos\ACM\ACM.BL\obj\Debug\ACM.BL.csprojAssemblyReference.
 C:\Users\Pedro\source\repos\ACM\ACM.BL\obj\Debug\ACM.BL.csproj.CoreCompileInputs.cache
 C:\Users\Pedro\source\repos\ACM\ACM.BL\obj\Debug\ACM.BL.dll
 C:\Users\Pedro\source\repos\ACM\ACM.BL\obj\Debug\ACM.BL.pdb
+C:\Users\Pedro\source\repos\ACM\ACM.BL\bin\Debug\Acme.Commom.dll
+C:\Users\Pedro\source\repos\ACM\ACM.BL\bin\Debug\Acme.Commom.pdb
+C:\Users\Pedro\source\repos\ACM\ACM.BL\obj\Debug\ACM.BL.csproj.CopyComplete

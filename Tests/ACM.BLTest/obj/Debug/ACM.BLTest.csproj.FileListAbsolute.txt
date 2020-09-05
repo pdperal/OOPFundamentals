@@ -17,3 +17,5 @@ C:\Users\Pedro\source\repos\ACM\Tests\ACM.BLTest\obj\Debug\ACM.BLTest.csproj.Cor
 C:\Users\Pedro\source\repos\ACM\Tests\ACM.BLTest\obj\Debug\ACM.BLTest.csproj.CopyComplete
 C:\Users\Pedro\source\repos\ACM\Tests\ACM.BLTest\obj\Debug\ACM.BLTest.dll
 C:\Users\Pedro\source\repos\ACM\Tests\ACM.BLTest\obj\Debug\ACM.BLTest.pdb
+C:\Users\Pedro\source\repos\ACM\Tests\ACM.BLTest\bin\Debug\Acme.Commom.dll
+C:\Users\Pedro\source\repos\ACM\Tests\ACM.BLTest\bin\Debug\Acme.Commom.pdb

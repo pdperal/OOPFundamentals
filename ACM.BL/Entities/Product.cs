@@ -1,4 +1,5 @@
 ﻿using ACM.BL.Entities;
+using Acme.Commom;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace ACM.BL
         {
             get
             {
-                return _productName;
+               return StringHandler.InsertSpaces(_productName);
             }
             set
             {

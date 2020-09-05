@@ -53,6 +53,11 @@
     <Compile Include="Repository\OrderRepository.cs" />
     <Compile Include="Repository\ProductRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Acme.Commom\Acme.Commom.csproj">
+      <Project>{25f583ce-50de-40a2-9cde-19249a8c5c80}</Project>
+      <Name>Acme.Commom</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
