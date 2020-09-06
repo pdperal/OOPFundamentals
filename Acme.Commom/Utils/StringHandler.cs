@@ -8,6 +8,11 @@ namespace Acme.Commom
 {
     public static class StringHandler
     {
+        /// <summary>
+        /// Inserts spaces before each capital letter in a string
+        /// </summary>
+        /// <param name="source"></param>
+        /// <returns>Returns the sended parameter with capital letters</returns>
         public static string InsertSpaces(this string source)
         {
             string result = string.Empty;

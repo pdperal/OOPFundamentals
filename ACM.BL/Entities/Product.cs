@@ -1,5 +1,6 @@
 ﻿using ACM.BL.Entities;
 using Acme.Commom;
+using Acme.Commom.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Xml.Schema;
 
 namespace ACM.BL
 {
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
         public decimal? CurrentPrice { get; set; }
         public string ProductDescription { get; set; }
@@ -34,6 +35,7 @@ namespace ACM.BL
         {
             ProductId = productId;
         }
+        public string Log() => $"{ProductId}: {ProductName} Detail: {ProductDescription} Status: {EntityState.ToString()}";
         public override string ToString() => ProductName;
         public override bool Validate()
         {

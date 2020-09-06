@@ -1,4 +1,5 @@
 ﻿using ACM.BL.Entities;
+using Acme.Commom.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Order : EntityBase
+    public class Order : EntityBase, ILoggable
     {
         public DateTimeOffset? OrderDate { get; set; }
         public int OrderId { get; set; }
