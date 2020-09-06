@@ -25,6 +25,8 @@ namespace ACM.BL
             OrderId = orderId;
             OrderItems = new List<OrderItem>();
         }
+        public string Log() => 
+            $"{OrderId}: Date: {OrderDate.Value.Date} Status: {EntityState.ToString()}";
         public override bool Validate()
         {
             var isValid = true;

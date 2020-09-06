@@ -12,7 +12,7 @@ namespace ACM.BL.Entities
         {
             foreach (var item in itemsLog)
             {
-                //Console.WriteLine(item.);
+                //Console.WriteLine(item);
             }
         }
     }
